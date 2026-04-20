@@ -1,0 +1,59 @@
+@use '../../utils/' as * ;
+
+
+// brand hm2
+
+
+.tp-text-slide{
+    
+    &-title2 {
+        color: #153000;
+        margin-bottom: 0;
+        font-size: var(--ztc-font-size-font-s28);
+        line-height: 28px;
+        font-weight: var(--ztc-weight-bold);
+        & img{
+            width: 40px;
+            height: 40px;
+            margin-right: 20px;
+            filter: brightness(0) invert(0);
+        }
+    }
+}
+
+
+
+.tpcauses-text-slider-active{
+    & .swiper-slide{
+        width: auto;
+        display: inline-block;
+    }
+}
+
+.tp-brand {
+	background-color: #fff;
+	padding: 25px 0;
+	height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.tp-text-bg-2 {
+    overflow: hidden;
+    padding: 30px 0;
+    height: 95px;
+    width: 100%;
+}
+
+
+
+// home 07 
+
+.tp-texthm7-slider{
+    position: relative;
+    z-index: 2;
+}
+
+

@@ -1,0 +1,129 @@
+@use '../../utils/' as * ;
+
+// home 08 
+
+.vl-pricing8-area{
+    overflow: hidden;
+    background: var(--ztc-bg-bg-28);
+}
+
+
+.pricing8-box{
+    background: var(--ztc-bg-bg-1);
+    border-radius: 12px;
+    padding: 24px;
+    .plan-wrap{
+        h3{
+          color: var(--ztc-text-text-29);  
+          font-size: var(--ztc-font-size-font-s18);
+          line-height: 18px;
+          font-weight: 600;
+        }
+        h2 a{
+            font-family: var(--ztc-family-font2);
+            color: var(--ztc-text-text-29);
+            font-size: var(--ztc-font-size-font-s44);
+            line-height: 44px;
+            font-weight: 400;
+           span{
+             font-family: var(--ztc-family-font1);
+             color: #42454D;
+             font-size: var(--ztc-font-size-font-s24);
+             line-height: 24px;
+             font-weight: 400;
+           } 
+        }
+    }
+}
+
+.features-list{
+    h3{
+        font-family: var(--ztc-family-font2);
+        font-size: var(--ztc-font-size-font-s24);
+        line-height: 24px;
+        font-weight: 400;
+    }
+    ul{
+        li{
+            color: var(--ztc-text-text-30);
+            font-size: var(--ztc-font-size-font-s16);
+            line-height: 16px;
+            font-weight: 400;
+            margin-bottom: 16px;
+            &:last-child{
+              margin-bottom: 0px;
+            }
+            img{
+                margin: 0px 4px 2px 0px;
+            }
+        }
+    }
+}
+
+.pricing8-box.pricing8-box-main{
+    background: var(--ztc-bg-bg-29);
+    .plan-wrap {
+        h3{
+           color: var(--ztc-text-text-1);  
+         }
+        h2{
+            a{
+            color: var(--ztc-text-text-1);
+            }
+            span{
+                color: rgba(255, 255, 255, 0.80);  
+            }
+        }
+    }
+}
+
+.features-list.features-list-main{
+    h3{
+        color: var(--ztc-text-text-1);
+
+    }
+    ul li{
+        color: rgba(255, 255, 255, 0.80);
+    }
+}
+
+
+// btn 
+.vl-primary-btn-hm8.vl-primary-hm8-pricing{
+    width: 100%;
+    text-align: center;
+    &::after{
+        display: none;
+    }
+}
+
+.vl-primary-btn-hm8.vl-primary-hm8-pricing:hover::after {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+  border-radius: 0;
+  border-radius: 8px; 
+}
+// btn 
+.vl-primary-btn-hm8.vl-primary-hm8-pricing-main{
+    background: var(--ztc-bg-bg-1);
+    color: var(--ztc-text-text-29);
+    width: 100%;
+    text-align: center;
+     &::after{
+        display: none;
+    }
+}
+
+.vl-primary-btn-hm8.vl-primary-hm8-pricing-main:hover::after {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+  border-radius: 0;
+  border-radius: 8px; 
+}
+

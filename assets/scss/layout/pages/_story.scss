@@ -1,0 +1,135 @@
+@use '../../utils/' as * ;
+
+
+.vl-story-area{
+    overflow: hidden;
+    
+}
+
+
+.vl-story-info{
+    background: var(--ztc-bg-bg-10);
+    padding: 70px 30px;
+    border-radius: 16px;
+    @media #{$lg}{
+      padding: 32px 30px;
+     }
+  .vl-story-header{
+    h3{
+        color: var(--ztc-text-text-1);
+        font-size: var(--ztc-font-size-font-s18);
+        line-height: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    h2{
+        color: var(--ztc-text-text-1);
+        font-family: var(--ztc-family-font2);
+        font-size: var(--ztc-font-size-font-s44);
+        line-height: 52px;
+        font-weight: 400;
+         @media #{$lg}{
+          font-size: 38px;
+        }
+    }
+}
+}
+
+
+.vl-story-thumb{
+    img{
+        height: 562px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 16px;
+        @media #{$lg}{
+          height: 526px;
+        }
+    }
+}
+
+
+
+.timeline {
+  
+
+  .timeline-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 60px;
+    background: var(--ztc-bg-bg-1);
+    padding: 10px;
+    border-radius: 100px;
+     @media #{$xl}{
+       gap: 10px;
+     }
+    @media #{$xs}{
+       gap: 6px;
+       margin-bottom: 16px;
+     }
+     @media #{$lg}{
+       margin-bottom: 24px;
+        border-radius: 16px;
+      }
+    .tab2 {
+      background: transparent;
+      border: 2px solid #023118;
+      background: var(--ztc-bg-bg-10);
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 100px;
+      font-size: var(--ztc-font-size-font-s20);
+      line-height: 24px;
+      font-weight: 400;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &.active {
+        background: #ffc107;
+        border-color: #ffc107;
+        color: #000000;
+      }
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  .timeline-content {
+    position: relative;
+    min-height: 120px;
+
+    .text {
+      color: #fff;
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      transition: opacity 0.4s ease, visibility 0.4s ease;
+
+      &.active {
+        opacity: 1;
+        visibility: visible;
+        position: relative;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 1.5rem;
+
+    .timeline-tabs .tab2 {
+      padding: 6px 14px;
+      font-size: 14px;
+    }
+  }
+}
+
+
+
+

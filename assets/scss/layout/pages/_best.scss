@@ -1,0 +1,200 @@
+@use '../../utils/' as * ;
+
+
+
+//  BEST DEALS //
+
+.vl-best-deals10-area{
+    overflow: hidden;
+}
+
+.best-deals10-box{
+    overflow: hidden;
+    padding: 16px;
+    border-radius: 16px;
+    background: #F7F7FB;
+    .best-deals10-thumb{
+        border-radius: 12px;
+        background: #FFFFFF;
+        img{
+            height: 230px;
+            object-fit: contain;
+        }
+    }
+    .best-deals10-content{
+        text-align: center;
+        h3 a {
+            color: var(--ztc-text-text-34);
+            font-size: var(--ztc-font-size-font-s24);
+            font-family: var(--ztc-family-font2);
+            line-height: 24px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        p{
+            font-size: var(--ztc-font-size-font-s16);
+            line-height: 16px;
+            font-weight: 400;
+            color: var(--ztc-text-text-35);
+        }
+    }
+}
+
+.best-deals10-box-wrap{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    background: #F7F7FB;
+    border-radius: 12px;
+    padding: 16px 16px 16px 30px;
+    @media #{$xs} {
+        display: block;
+    }
+    .title a{
+        color: var(--ztc-text-text-34);
+        font-size: var(--ztc-font-size-font-s24);
+        font-family: var(--ztc-family-font2);
+        line-height: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .pera{
+        font-size: var(--ztc-font-size-font-s16);
+        line-height: 16px;
+        font-weight: 400;
+        color: var(--ztc-text-text-35);  
+    }
+    .pera_text{
+        font-size: var(--ztc-font-size-font-s16);
+        line-height: 26px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: var(--ztc-text-text-35);  
+    }
+    .best-deals10-thumb{
+        background: #ffff;
+    }
+    .best-deals10-thumb{
+        border-radius: 12px;
+        img{
+            height: 190px;
+            object-fit: contain;
+            @media #{$xs} {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+
+.best-deals10-banner{
+    border-radius: 16px;
+    img{
+        width: 100%;
+        border-radius: 16px;
+    }
+}
+
+
+
+//  BEST SELLER //
+
+.vl-best-seller10-area{
+    overflow: hidden;
+    position: relative;
+    background: var(--ztc-bg-bg-33);
+}
+.vl-best-seller10-area-bg{
+   position: absolute;
+   top: -60px;
+   right: 0;  
+}
+
+.vl-best-seller10-box{
+    padding: 16px;
+    background: var(--ztc-bg-bg-1);
+    border-radius: 12px;
+    height: 342px;
+    .vl-best-seller10-thumb{
+        background: var(--ztc-bg-bg-33);
+        text-align: center;
+        border-radius: 12px;
+        height: 230px;
+    }
+    .vl-best-seller10-content{
+        text-align: center;
+        h3 a{
+            color: var(--ztc-text-text-34);
+            font-size: var(--ztc-font-size-font-s24);
+            font-family: var(--ztc-family-font2);
+            line-height: 24px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        p{
+            font-size: var(--ztc-font-size-font-s16);
+            line-height: 16px;
+            font-weight: 400;
+            color: var(--ztc-text-text-35);
+        }
+    }
+}
+
+.best-seller10-arrow{
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    position: relative;
+    z-index: 99;
+    .prev-arrow{
+        display: inline-block;
+        height: 48px;
+        width: 48px;
+        line-height: 45px;
+        text-align: center;
+        border: 1px solid #030703;
+        border-radius: 100%;
+        margin-right: 16px;
+        transition: 0.4s;
+        &:hover{
+            border: 1px solid #55FC50;
+            background: var(--ztc-bg-bg-32);
+            transform: 0.4s;
+           img{
+              filter: brightness(0) invert(1); 
+              transform: all 0.4s;
+            }
+        }
+        & img{
+             filter: brightness(0) invert(0); 
+              transform: all 0.4s; 
+        }
+    }
+    .next-arrow{
+        display: inline-block;
+        height: 48px;
+        width: 48px;
+        line-height: 45px;
+        text-align: center;
+        border: 1px solid #030703;
+        border-radius: 100%;
+        margin-right: 16px;
+        transition: 0.4s;
+        &:hover{
+            border: 1px solid #55FC50;
+            background: var(--ztc-bg-bg-32);
+            transform: 0.4s;
+           img{
+              filter: brightness(0) invert(1); 
+              transform: all 0.4s;
+            }
+        }
+        & img{
+             filter: brightness(0) invert(0); 
+              transform: all 0.4s; 
+        }
+    }
+}

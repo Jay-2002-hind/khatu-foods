@@ -1,0 +1,353 @@
+@use '../../utils/' as * ;
+
+/*============= CONTACT CSS AREA ===============*/
+
+.vl-contact2-area{
+    overflow: hidden;
+    background: var(--ztc-bg-bg-11);
+    border-radius: 16px;
+    margin: 0px 30px;
+    @media #{$xs} {
+        margin: 0px 10px;
+     }
+}
+    
+.contact2-info-mobile{
+    background: var(--ztc-bg-bg-1);
+    padding: 30px;
+    border-radius: 16px;
+    .contact2-mobile-content{
+        display: flex;
+        align-items: center;
+
+        &:hover{
+            .contact2-mobile-logo{
+                a{
+                    svg{
+                        transform: rotateY(180deg);
+                        transition: 0.4s;
+                    }
+                }
+            }
+        }
+         @media #{$md,$xs} {
+            display: inline-block;
+            }
+        .contact2-mobile-logo{
+            background: var(--ztc-bg-bg-10);
+            height: 60px;
+            width: 60px;
+            display: inline-block;
+            line-height: 60px;
+            text-align: center;
+            border-radius: 100%;
+            margin-right: 26px;
+             transition: 0.4s;
+        }
+        .contact2-mobile-text{
+            h3{
+                a{
+                  color: rgba(2, 49, 24, 0.80);  
+                  font-size: var(--ztc-font-size-font-s18);
+                  line-height: 18px;
+                  font-weight: 400;
+
+                }
+            }
+            ul li{
+                a{
+                    color: var(--ztc-text-text-10);
+                    font-size: var(--ztc-font-size-font-s18);
+                    font-weight: 400;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+}
+
+
+.vl-contact2-banner{
+    border-radius: 16px;
+    img{
+        width: 100%;
+        height: 224px;
+        border-radius: 16px;
+        object-fit: cover;
+        @media #{$lg}{
+          height: 250px;
+        }
+
+       
+    }
+}
+
+
+.contact2-form-area{
+    background: var(--ztc-bg-bg-10);
+    padding: 30px;
+    border-radius: 16px;
+    @media #{$xs}{
+      padding: 26px 13px;
+    }
+    .title{
+        font-family: var(--ztc-family-font2);
+        color: var(--ztc-text-text-1);
+        font-size: var(--ztc-font-size-font-s24);
+        line-height: 24px;
+        font-weight: var(400);
+    }
+    .pera_text{
+        color: rgba(255, 255, 255, 0.80);
+        font-size: var(--ztc-font-size-font-s16);
+        line-height: 24px;
+        font-weight: 400;
+      
+    }
+     form{
+           input{
+                color: rgba(255, 255, 255, 0.80);
+                border-radius: 100px;
+                border: 1px solid rgba(255, 255, 255, 0.12);
+                background: rgba(255, 255, 255, 0.12);
+                padding: 16px 0px 16px 12px;
+                width: 100%;
+                &::placeholder{
+                    color: rgba(255, 255, 255, 0.80);
+                }
+            }
+            textarea{
+                color: rgba(255, 255, 255, 0.80);
+                border-radius: 16px;
+                border: 1px solid rgba(255, 255, 255, 0.12);
+                background: rgba(255, 255, 255, 0.12);
+                padding: 16px 16px;
+                width: 100%;
+                height: 210px;
+                &::placeholder{
+                    color: rgba(255, 255, 255, 0.80);
+                }
+            }
+        }
+
+      .form1-select .nice-select {
+                border-radius: 100px;
+                border: 1px solid rgba(255, 255, 255, 0.12);
+                background: rgba(255, 255, 255, 0.12);
+                padding: 16px 14px;
+                height: 57px;
+                line-height: 26px;
+                color: rgba(255, 255, 255, 0.80);
+                font-size: var(--ztc-font-size-font-s16);
+                font-weight: var(--ztc-weight-medium);
+                ul {
+                    background: var(--ztc-bg-bg-1);
+                    li {
+                        color: var(--ztc-text-text-5);
+                    }
+                }
+                
+        }
+        .form1-select .nice-select::after{
+            height: 10px;
+            margin-top: -6px;
+            right: 14px;
+            width: 10px;
+        } 
+          
+}
+
+.contact2-form-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media #{$md,$xs}{
+     display: block;
+    }
+    h3{
+     color: rgba(255, 255, 255, 0.80);
+     font-size: var(--ztc-font-size-font-s18);
+     line-height: 18px;
+     font-weight: 400;
+     img{
+        margin-right: 12px;
+     }
+    }
+}
+
+
+
+
+
+
+// home 07 
+
+
+.qoute7-wrap{
+    border: 20px solid var(--ztc-bg-bg-1);
+    border-radius: 16px;
+}
+
+.qoute7-left{
+    background: var(--ztc-bg-bg-1);
+    border: 1px solid #fff;
+}
+
+
+.qoute7-heading{
+    h3{
+        color: var(--ztc-text-text-26);
+        font-size: var(--ztc-font-size-font-s24);
+        line-height: 24px;
+        font-weight: 400;
+        padding: 12px 16px;
+        display: inline-block;
+        border-radius: 30px;
+        border: 1px solid rgba(136, 217, 69, 0.3);
+        background: rgba(136, 217, 69, 0.1);
+        box-shadow: 0 4px 12px 0 rgba(136, 217, 69, 0.2) inset;
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+        text-align: center;
+        @media #{$xs} {
+            font-size: var(--ztc-font-size-font-s16);
+            line-height: 16px;
+        }
+        img{
+          margin-right: 12px;
+        }
+    }
+    h2{
+        font-family: var(--ztc-family-font2);
+        color: var(--ztc-text-text-26);
+        font-size: var(--ztc-font-size-font-s44);
+        line-height: 44px;
+        font-weight: 400;
+        @media #{$xs} {
+            font-size: var(--ztc-font-size-font-s32);
+            line-height: 40px;
+        }
+    }
+}
+
+.qoute7-form{
+    form{
+        padding: 0px 20px 0px 0px;
+        .input-text{
+            grid-template-columns: 1fr 1fr;
+            display: grid;
+            grid-column-gap: 24px;
+            grid-row-gap: 24px;
+            @media #{$xs} {
+                display: block;
+                margin-bottom: 20px;
+            }
+            input{
+            color: var(--ztc-text-text-27);
+            border-radius: 100px;
+            border: 1px solid rgba(136, 217, 69, 0.30);
+            background: var(--ztc-bg-bg-26);
+            padding: 14px 14px;
+            width: 100%;
+            @media #{$xs} {
+                margin-bottom: 20px;
+            }
+            &::placeholder{
+                 color: var(--ztc-text-text-27);
+            }
+        }
+        }
+        
+
+        textarea{
+            color: var(--ztc-text-text-27);
+            border-radius: 8px;
+            border: 1px solid rgba(136, 217, 69, 0.30);
+            background: var(--ztc-bg-bg-26);
+            padding: 14px 14px;
+            resize: none;
+            height: 150px;
+            width: 100%;
+            display: block;
+            @media #{$xs} {
+                margin-top: 20px;
+            }
+           &::placeholder{
+                 color: var(--ztc-text-text-27);
+            }
+        }
+    }
+}
+
+
+
+  .qoute7-select .nice-select {
+      border-radius: 100px;
+      border: 1px solid rgba(136, 217, 69, 0.30);
+      background: var(--ztc-bg-bg-26);
+      padding: 16px 14px;
+      height: 54px;
+      line-height: 26px;
+      color: var(--ztc-text-text-27);
+      font-size: var(--ztc-font-size-font-s16);
+      font-weight: var(--ztc-weight-medium);
+      
+}
+.qoute7-select .nice-select::after{
+    height: 10px;
+    margin-top: -6px;
+    right: 14px;
+    width: 10px;
+}
+
+
+
+// contact inner 
+.vl-contact-inr-area{
+    background: #F4F7F5;
+}
+
+.contact2-info-mobile.contact-inr-fix {
+  background: var(--ztc-bg-bg-23);
+  position: relative;
+  @media #{$xs} {
+    margin-top: 30px;
+  }
+
+  @media #{$md} {
+    margin-top: 30px;
+  }
+
+}   
+
+.contact-box-inr-shape{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.vl-contact_inner-map-area{
+    margin-bottom: -8px;
+    & iframe{
+        width: 100%;
+        height: 600px;
+        @media #{$xs} {
+            height: 200px;
+        }
+
+        @media #{$md} {
+            height: 300px;
+        }
+
+        @media #{$lg} {
+            height: 400px;
+        }
+    }
+}
+
+
+
+
+   
+
+

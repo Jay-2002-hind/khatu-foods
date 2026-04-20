@@ -1,0 +1,14 @@
+@use '../../utils/' as * ;
+
+.vl-error-area{
+    background: #F4F7F5;
+    .vl-error-area-thumb{
+        img{
+           object-fit: cover;
+           width: 100%;
+           height: 100%; 
+        }
+    }
+}
+
+

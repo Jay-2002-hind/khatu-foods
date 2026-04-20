@@ -1,0 +1,37 @@
+@use '../../utils/' as * ;
+
+/*============= CTA CSS AREA ===============*/
+
+// home 04 
+.vl-cta4-area{
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+.cta4-area-info{
+    background: var(--ztc-bg-bg-16);
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta4-area-shape1{
+    position: absolute;
+    right: -70%;
+    top: -10%;
+}
+
+.cta4-area-shape2{
+     position: absolute;
+    left: -10%;
+    bottom: -36%;
+    @media #{$xs} {
+        z-index: -1;
+    }
+     @media #{$md} {
+        display: none;
+    }
+}
+
+
+
